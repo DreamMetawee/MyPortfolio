@@ -1,75 +1,138 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-
-/* style.css */
-
-/* Custom styles for header */
 header {
     background-color: #007bff;
     color: #fff;
     padding: 20px 0;
 }
 
-/* Custom styles for welcome message */
-.header-welcome {
+header h1 {
     margin: 0;
+    font-size: 28px;
 }
 
-/* Custom styles for logout link */
-.logout-link {
+.welcome {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.logout {
     color: #fff;
     text-decoration: none;
     margin-left: 10px;
 }
 
-/* Custom styles for container */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
+.section {
+    padding: 30px 0;
 }
 
-/* Custom styles for form */
-.form-group {
+.section-header {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Custom styles for card */
-.card {
+/* Portfolio Cards */
+.portfolio-card {
     margin-bottom: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 100%; /* กำหนดให้ความกว้างเต็มหน้าจอ */
 }
 
-/* Custom styles for card body */
-.card-body {
+.portfolio-card .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.portfolio-card .card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-card .card-body {
+    padding: 20px;
+    
+}
+
+.portfolio-card .portfolio-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-card .portfolio-description {
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+/*portfolio.php*/
+
+/* CSS Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
     padding: 20px;
 }
 
-/* Custom styles for portfolio image */
+.portfolio-container {
+    max-width: 800px;
+    margin: auto;
+}
+
 .portfolio-img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* Custom styles for portfolio pdf */
-.portfolio-pdf {
-    width: 100%;
-    height: 200px; /* Set height as needed */
+.portfolio-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-/* Custom styles for card title */
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-/* Custom styles for card text */
-.card-text {
-    font-size: 1rem;
-}
-
-/* Custom styles for upload button */
-.upload-button {
-    margin-top: 20px;
+.back-to-home {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
 }
